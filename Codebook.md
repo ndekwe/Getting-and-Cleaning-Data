@@ -14,101 +14,54 @@ The data collected come from “Human Activity Recognition Using Smartphones Dat
 
 ##USED VARIABLES DESCRIPTION
 
-#trainData_X:  
-is a data farame of Training set
+1. trainData_X:
+is a data frame of Training set with 7352 observations and 561 variables: 
 
-.'data.frame':	7352 obs. of  561 variables: 
-. $ V1  : num  0.289 0.278 0.28 0.279 0.277 ... 
-. $ V2  : num  -0.0203 -0.0164 -0.0195 -0.0262 -0.0166 ... 
-. $ V3  : num  -0.133 -0.124 -0.113 -0.123 -0.115 ... 
-. $ V4  : num  -0.995 -0.998 -0.995 -0.996 -0.998 ... 
-. $ V5  : num  -0.983 -0.975 -0.967 -0.983 -0.981 ... 
-. $ V6  : num  -0.914 -0.96 -0.979 -0.991 -0.99 ... 
-. $ V7  : num  -0.995 -0.999 -0.997 -0.997 -0.998 ... 
-. $ V8  : num  -0.983 -0.975 -0.964 -0.983 -0.98 ... 
-.$ V9  : num  -0.924 -0.958 -0.977 -0.989 -0.99 ... 
-. $ V10 : num  -0.935 -0.943 -0.939 -0.939 -0.942 ... 
  
-#testData_X :  
-represents Test set
-'data.frame':	2947 obs. of  561 variables: 
- $ V1  : num  0.257 0.286 0.275 0.27 0.275 ... 
- $ V2  : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ... 
- $ V3  : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ... 
- $ V4  : num  -0.938 -0.975 -0.994 -0.995 -0.994 ... 
- $ V5  : num  -0.92 -0.967 -0.97 -0.973 -0.967 ... 
- $ V6  : num  -0.668 -0.945 -0.963 -0.967 -0.978 ... 
- $ V7  : num  -0.953 -0.987 -0.994 -0.995 -0.994 ... 
- $ V8  : num  -0.925 -0.968 -0.971 -0.974 -0.966 ... 
- $ V9  : num  -0.674 -0.946 -0.963 -0.969 -0.977 ... 
- $ V10 : num  -0.894 -0.894 -0.939 -0.939 -0.939 ... 
-.............
-.................
+2. testData_X :
+represents Test set data frame of 2947 observations andof  561 variables: 
+ 
 
-#subjectTrainData : 
-Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-'data.frame':	7352 obs. of  1 variable: 
- $ V1: int  1 1 1 1 1 1 1 1 1 1 ... 
+3. subjectTrainData : 
+Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. Data frame with 7352 observations and one variable.
 
-#trainData_Y :  
-represents Training labels
-'data.frame':	7352 obs. of  1 variable: 
- $ V1: int  5 5 5 5 5 5 5 5 5 5 ... 
+4.trainData_Y : 
+represents Training labels. A data frame of 7352 observations and one 1 variable: 
 
-#subjectTestData 
-is a data frame containing data from subject_test.txt 
-'data.frame':	2947 obs. of  1 variable: 
- $ V1: int  2 2 2 2 2 2 2 2 2 2 ... 
+5.subjectTestData
+is a data frame containing data from subject_test.txt. A data frame with 2947 observations and 1 variable
 
-#testData_Y :  
-Test labels
-'data.frame':	2947 obs. of  1 variable: 
- $ V1: int  5 5 5 5 5 5 5 5 5 5 …
-
-#features : 
-List of all features. 
-'data.frame':	561 obs. of  2 variables: 
- $ V1: int  1 2 3 4 5 6 7 8 9 10 ... 
- $ V2: Factor w/ 477 levels "angle(tBodyAccJerkMean),gravityMean)",..: 309 310 311 316 317 318 290 291 292 306 ... 
-
-#activity_labels : 
+6. testData_Y : Test labels
+A data frame with 2947 observations and one variable.
+ 
+7. features : List of all features. 
+A data frame with 561 observations and 2 variable
+ 
+8. activity_labels : 
 Links the class labels with their activity name.
-'data.frame':	6 obs. of  2 variables: 
- $ V1: int  1 2 3 4 5 6 
- $ V2: chr  "WALKING" "WALKING_UPSTAIRS" "WALKING_DOWNSTAIRS" "SITTING" ... 
+A data frame with 6 observations and 2 variables
+
 
 The collected dataset summary is represented by the figure found at the following link:
 https://class.coursera.org/getdata-007/forum/thread?thread_id=99#post-618
 
-#wholeData_X : 
+9. wholeData_X :
 is a combination of trainData_X and testData_X
-'data.frame':	10299 obs. of  561 variables: 
- $ tBodyAcc-mean()-X                   : num  0.289 0.278 0.28 0.279 0.277 ... 
- $ tBodyAcc-mean()-Y                   : num  -0.0203 -0.0164 -0.0195 -0.0262 -0.0166 ... 
- $ tBodyAcc-mean()-Z                   : num  -0.133 -0.124 -0.113 -0.123 -0.115 ... 
- $ tBodyAcc-std()-X                    : num  -0.995 -0.998 -0.995 -0.996 -0.998 ... 
- $ tBodyAcc-std()-Y                    : num  -0.983 -0.975 -0.967 -0.983 -0.981 ... 
- $ tBodyAcc-std()-Z                    : num  -0.914 -0.96 -0.979 -0.991 -0.99 ... 
-.................................
+A data frame with 10299 observations and 561 variable
 
-#Mean :  
+10. Mean :
 is the mean for every column of wholeData_X dataset
-int [1:33] 1 2 3 41 42 43 81 82 83 121 ... 
 
-#SD: 
+11. SD: 
 is the standard deviation of every column of wholeData_X dataset
-int [1:33] 4 5 6 44 45 46 84 85 86 124 ... 
-
-#MeanSD: 
+ 
+12. MeanSD: 
 is the calculation result of wholeData_X indexed at every mean and standard deviation
 
-#wholeData_Y : 
+13. wholeData_Y : 
 is a combination of trainData_Y and testData_Y
-'data.frame':	10299 obs. of  1 variable: 
- $ V1: int  5 5 5 5 5 5 5 5 5 5 ... 
 
-
-#all.activity : 
+14. all.activity :
 is the bind of columns of wholeData_Y and MeanSD
 'data.frame':	10299 obs. of  67 variables: 
  $ Activity                   : chr  "STANDING" "STANDING" "STANDING" "STANDING" ... 
@@ -118,17 +71,17 @@ is the bind of columns of wholeData_Y and MeanSD
  $ tGravityAcc-mean()-X       : num  0.963 0.967 0.967 0.968 0.968 ... 
  $ tGravityAcc-mean()-Y       : num  -0.141 -0.142 -0.142 -0.144 -0.149 ... 
 
-#activity_labels : 
+15. activity_labels :
 are activity of daily living (ADL) that the recorded 30 subjects performed while carrying a waist-mounted smartphone with embedded inertial sensors.
 [1] "WALKING"            "WALKING_UPSTAIRS"   "WALKING_DOWNSTAIRS" 
 [4] "SITTING"            "STANDING"           "LAYING" 
 (referemce: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones )
 
-#Subject_all : 
+16. Subject_all:
 is a bind of rows from subjectTrainData data frame and subjectTestData dataframe. 
 
-#all:  
+17. all:
 is a bind of columns from Subject_all and all.activity data frames
 
-#Tidy: 
+18. Tidy: 
 is an aggreagation of each variable for each activity and each subject
