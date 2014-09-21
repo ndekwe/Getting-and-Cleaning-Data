@@ -33,12 +33,7 @@ A data frame with 2947 observations and one variable.
 7. features : List of all features. 
 A data frame with 561 observations and 2 variable
  
-8. activity_labels : 
-Links the class labels with their activity name.
-A data frame with 6 observations and 2 variables
-
-The collected dataset summary is represented by the figure found at the following link:
-https://class.coursera.org/getdata-007/forum/thread?thread_id=99#post-618
+8. activity_labels : Links the class labels with their activity name. It is a data frame with 6 observations and 2 variables
 
 9. wholeData_X : is a combination of trainData_X and testData_X 
    and it is a data frame with 10299 observations and 561 variable
